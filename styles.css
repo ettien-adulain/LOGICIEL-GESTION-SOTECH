@@ -1,0 +1,1922 @@
+/* Global Styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    perspective: 1000px;
+    text-transform: uppercase;
+    
+}
+
+
+.container {
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05) rotateX(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.input-group-text {
+    background-color: #e3e3e3;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+}
+
+.icon-animate {
+    transition: transform 0.3s ease;
+}
+
+.input-group:hover .icon-animate {
+    transform: scale(1.2);
+}
+
+.btn-danger, .btn-secondary {
+    border-radius: 12px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 1.2em;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    z-index: 1001;
+    animation: clignote 1s linear infinite;
+}
+
+.user-info i {
+    margin-right: 10px;
+    color: #ff0000;
+}
+
+.user-info span {
+    font-weight: italic;
+}
+
+@keyframes clignote {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Connexion Styles */
+#connexion header {
+    background-color: #ff0000;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transform: rotateX(10deg);
+}
+
+#connexion .form-container {
+    margin-top: 2rem;
+}
+
+#connexion .alert {
+    margin-top: 1rem;
+}
+
+/* Index Styles */
+#index header {
+    background-color: #ff0000;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transform: rotateX(10deg);
+}
+
+#index .menu {
+    margin-top: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+    max-width: 1000px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+#index .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: rotateY(0deg);
+}
+
+#index .menu-item:hover {
+    transform: scale(1.1) rotateY(10deg);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#index .menu-item i {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#index a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#index .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+}
+
+#index .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+#index .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('../sotech.PNG') no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#index .article { background-color: red; }
+#index .vente { background-color: red; }
+#index .commande { background-color: red; }
+#index .parametre { background-color: red; }
+#index .inventaire { background-color: red; }
+#index .facture { background-color: red; }
+#index .ca { background-color: red; }
+#index .utilisateur { background-color: red; }
+#index .gestion-stock { background-color: red; }
+#index .comptabilite { background-color: red; }
+#index .sms { background-color: red; }
+#index .email { background-color: red; }
+
+#index .article:hover { background-color: #ffa07a; }
+#index .vente:hover { background-color: #87ceeb; }
+#index .commande:hover { background-color: #f0e68c; }
+#index .parametre:hover { background-color: #32cd32; }
+#index .inventaire:hover { background-color: #da70d6; }
+#index .facture:hover { background-color: #ff69b4; }
+#index .ca:hover { background-color: #ffd700; }
+#index .utilisateur:hover { background-color: #9370db; }
+#index .gestion-stock:hover { background-color: #ff6347; }
+#index .comptabilite:hover { background-color: white; }
+#index .sms:hover { background-color: #ff4500; }
+#index .email:hover { background-color: #4682b4; }
+
+input::placeholder, button, label {
+    font-weight: bold;
+}
+
+
+/* Article Styles */
+#article .container {
+    margin-top: 20px;
+}
+
+#article .card-header {
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#article .card-body {
+    padding: 20px;
+}
+
+#article .card-body i {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+#article .card-body p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#article .card-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#article .card-link:hover {
+    color: #ff0000;
+}
+
+#article .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#article .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+#article .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#article .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+#article .title {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+/* Creation Article Styles */
+#creation_article header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#creation_article .form-container {
+    margin-top: 80px;
+}
+
+#creation_article #photo-preview {
+    position: relative;
+    margin-left: 2erm;
+    top: 10px;
+    right: 20px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    background: #fff;
+    z-index: 1000;
+}
+
+#creation_article #photo-img {
+    margin: 0 auto;
+    width: 200px;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+/* Liste des Articles Styles */
+#liste_article header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#liste_article .container {
+    flex: 1;
+    padding: 20px;
+}
+
+#liste_article .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#liste_article .form-control, .form-select {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#liste_article .form-control:focus, .form-select:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#liste_article .form-select {
+    width: auto;
+    max-width: 200px;
+    float: top;
+    float: left;
+}
+
+#liste_article .product-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+#liste_article .product-card:hover {
+    transform: scale(1.02);
+}
+
+#liste_article .product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+#liste_article .product-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#liste_article .product-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+#liste_article .old-price {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 16px;
+}
+
+#liste_article .info-overlay {
+    margin-top: 15px;
+}
+
+#liste_article .btn-danger, .btn-warning, .btn-secondary {
+    border-radius: 12px;
+}
+
+#liste_article .card-footer {
+    background-color: #f8f9fa;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#liste_article .fixed-bottom {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f8f9fa;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+#liste_article .alert-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1002;
+    animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#liste_article .cart-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+}
+
+#liste_article #cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Generateur Etiquette Styles */
+#generateur_etiquette header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+/* Categorie Article Styles */
+#categorie_article header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#categorie_article .container {
+    margin-top: 20px;
+}
+
+#categorie_article .category-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    padding: 10px;
+    color: white;
+    position: relative;
+}
+
+#categorie_article .category-card:hover {
+    transform: scale(1.02);
+}
+
+#categorie_article .category-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#categorie_article .category-list {
+    margin-top: 20px;
+}
+
+#categorie_article .form-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    font-size: 14px;
+}
+
+#categorie_article .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#categorie_article .btn-danger, .btn-secondary {
+    border-radius: 12px;
+}
+
+#categorie_article .input-group-text {
+    background: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 12px;
+}
+
+#categorie_article .btn-danger {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+#categorie_article .btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+#categorie_article .red-background {
+    background-color: #ff0000;
+}
+
+#categorie_article .context-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#categorie_article .context-menu a {
+    display: block;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+}
+
+#categorie_article .context-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Liste Numero de Serie Styles */
+#liste_numeroserie header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#liste_numeroserie table {
+    width: 100%;
+}
+
+#liste_numeroserie th, td {
+    text-align: center;
+}
+
+#liste_numeroserie .badge-vendue {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+#liste_numeroserie .badge-non-vendue {
+    background-color: #cc0000;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+#liste_numeroserie .empty-row {
+    text-align: center;
+}
+
+/* Vente Styles */
+#vente .container {
+    margin-top: 20px;
+}
+
+#vente .card-header {
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#vente .card-body {
+    padding: 20px;
+}
+
+#vente .card-body i {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+#vente .card-body p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#vente .card-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#vente .card-link:hover {
+    color: #ff0000;
+}
+
+#vente .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#vente .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+#vente .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#vente .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+#vente .title {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+/* Caisse Styles */
+#caisse header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#caisse .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+#caisse .form-container,
+#caisse .cart-container,
+#caisse .modal-content {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+    margin-bottom: 20px;
+}
+
+#caisse .form-group,
+#caisse .form-control,
+#caisse .custom-file-label {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#caisse .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#caisse .input-group-text {
+    background-color: #e3e3e3;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+}
+
+#caisse .icon-animate {
+    transition: transform 0.3s ease;
+}
+
+#caisse .input-group:hover .icon-animate {
+    transform: scale(1.2);
+}
+
+#caisse button {
+    margin-right: 0.5rem;
+}
+
+#caisse .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#caisse .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#caisse .modal-content .form-group {
+    margin-bottom: 1rem;
+}
+
+#caisse .modal-content .row {
+    margin-bottom: 1rem;
+}
+
+#caisse .modal-content .col-md-4 {
+    margin-bottom: 1rem;
+}
+
+#caisse .modal-content .btn-danger,
+#caisse .modal-content .btn-secondary {
+    border-radius: 12px;
+}
+
+#caisse .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+#caisse .total-amount {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+/* Liste Vente Styles */
+#liste_vente {
+    margin: 0;
+    padding: 2rem;
+    background: #f0f0f0;
+    perspective: 1000px;
+}
+
+#liste_vente .container {
+    max-width: 1200px;
+}
+
+#liste_vente .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#liste_vente header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#liste_vente .table-responsive {
+    margin-top: 20px;
+}
+
+#liste_vente .table thead {
+    background-color: #ff0000;
+    color: white;
+}
+
+#liste_vente .table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Liste Vente Journalier Styles */
+#liste_vente_jour {
+    margin: 0;
+    padding: 2rem;
+    background: #f0f0f0;
+    perspective: 1000px;
+}
+
+#liste_vente_jour header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#liste_vente_jour .container {
+    max-width: 1200px;
+}
+
+#liste_vente_jour .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#liste_vente_jour .table-responsive {
+    margin-top: 20px;
+}
+
+#liste_vente_jour .table thead {
+    background-color: #ff0000;
+    color: white;
+}
+
+#liste_vente_jour .table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Versement Styles */
+#versement {
+    margin: 0;
+    padding: 2rem;
+    background: #f0f0f0;
+    perspective: 1000px;
+}
+
+#versement header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#versement .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#versement .loader {
+    border: 4px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 4px solid #007bff;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+#versement .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#versement .title {
+    font-size: 2em;
+    color: #ff0000;
+}
+
+#versement .card-header {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+#versement .card-body {
+    background-color: #fff;
+}
+
+#versement .table thead th {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+/* Commande Styles */
+#commande .container {
+    margin-top: 20px;
+}
+
+#commande .card-header {
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#commande .card-body {
+    padding: 20px;
+}
+
+#commande .card-body i {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+#commande .card-body p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#commande .card-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#commande .card-link:hover {
+    color: #ff0000;
+}
+
+#commande .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#commande .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+#commande .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+#commande .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+#commande .title {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+/* Liste Commande Styles */
+#list_commande header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#list_commande main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#list_commande .table-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+#list_commande table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#list_commande table, th, td {
+    border: 1px solid #ddd;
+}
+
+#list_commande th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+#list_commande th {
+    background-color: #f4f4f4;
+}
+
+#list_commande tr:hover {
+    background-color: #f1f1f1;
+}
+
+#list_commande .user-info {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+#list_commande .user-info span {
+    font-weight: italic;
+}
+
+/* Parametres Styles */
+#parametres .container {
+    margin-top: 20px;
+}
+
+#parametres .card-header {
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#parametres .card-body {
+    padding: 20px;
+}
+
+#parametres .card-body i {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+#parametres .card-body p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#parametres .card-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#parametres .card-link:hover {
+    color: #ff0000;
+}
+
+#parametres .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#parametres .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+#parametres .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#parametres .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+#parametres .title {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+/***fin parametre***/
+
+
+/**** founisseur***/
+#fournisseur{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-top: 30px;
+}
+
+#fournisseur header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#fournisseur main {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+#fournisseur .row {
+    margin-bottom: 30px;
+}
+
+#fournisseur .form-container, .table-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+}
+
+#fournisseur .form-container {
+    margin-right: 15px;
+    margin-top: 0;
+    max-height: 100%;
+}
+
+#fournisseur .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#fournisseur .form-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#fournisseur .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#fournisseur .input-group-text {
+    background-color: #e3e3e3;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+}
+
+#fournisseur .btn-custom {
+    border-radius: 12px;
+    margin-right: 0.5rem;
+}
+
+#fournisseur .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 12px;
+}
+
+#fournisseur .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#fournisseur .btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border-radius: 12px;
+}
+
+#fournisseur .btn-danger:hover {
+    background-color: #c82333;
+}
+
+#fournisseur table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#fournisseur table, th, td {
+    border: 1px solid #ddd;
+}
+
+#fournisseur th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+#fournisseur th {
+    background-color: #f4f4f4;
+}
+
+#fournisseur tr:hover {
+    background-color: #f1f1f1;
+}
+
+#fournisseur .summary-box {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#fournisseur #total-row {
+    position: relative;
+    padding-top: 2rem;
+}
+#fournisseur .user-info span {
+    font-weight: italic;
+}
+#fournisseur .user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    right:0;
+    margin: 20px;
+    font-size: 1.2em;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    z-index: 1001;
+}
+#fournisseur .user-info{
+    animation:clignote 1s linear infinite;
+}
+@keyframes clignote{
+    0%,100%{ opacity:1;}
+    50%{opacity:0;}
+}
+/***fin fournisseur***/
+
+
+/****inventaire****/
+#inventaire{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-top: 30px;
+}
+
+#inventaire header {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#inventaire .container {
+    margin-top: 100px;
+}
+
+#inventaire .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+#inventaire .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#inventaire .form-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#inventaire .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#inventaire .input-group-text {
+    background-color: #e3e3e3;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+}
+
+#inventaire .icon-animate {
+    transition: transform 0.3s ease;
+}
+
+#inventaire .input-group:hover .icon-animate {
+    transform: scale(1.2);
+}
+
+#inventaire .btn {
+    border-radius: 12px;
+}
+
+#inventaire .btn-danger {
+    background-color: #dc3545;
+    border: none;
+}
+
+#inventaire .btn-danger:hover {
+    background-color: #c82333;
+}
+
+#inventaire .btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+#inventaire .btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+#inventaire #confirmation-dialog, #error-dialog, #category-dialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+    width: 80vw;
+    max-width: 1200px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#inventaire #confirmation-dialog h2, #error-dialog h2, #category-dialog h2 {
+    margin-top: 0;
+}
+
+#inventaire #confirmation-dialog button, #error-dialog button, #category-dialog button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#inventaire #confirmation-dialog button.yes {
+    background-color: #28a745;
+    color: white;
+}
+
+#inventaire #confirmation-dialog button.no {
+    background-color: #dc3545;
+    color: white;
+}
+
+#inventaire #error-dialog button.retry {
+    background-color: #28a745;
+    color: white;
+}
+
+#inventaire #error-dialog button.cancel {
+    background-color: #dc3545;
+    color: white;
+}
+
+#inventaire #category-dialog button.close {
+    background-color: #dc3545;
+    color: white;
+}
+
+#inventaire .card {
+    margin: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+#inventaire .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+#inventaire .card-body {
+    padding: 1.5rem;
+}
+
+#inventaire .category-item {
+    cursor: pointer;
+    color: #007bff;
+    text-decoration: underline;
+}
+
+#inventaire .category-item:hover {
+    text-decoration: none;
+}
+
+#inventaire table {
+    width: 100%;
+    margin-top: 1rem;
+    border-collapse: collapse;
+}
+
+#inventaire table th, table td {
+    padding: 8px;
+    border: 1px solid #dee2e6;
+}
+
+#inventaire table th {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+#inventaire .input-quantity {
+    width: 100px;
+}
+
+#inventaire .btn-edit {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    color: #007bff;
+}
+
+#inventaire .btn-edit:hover {
+    text-decoration: underline;
+}
+/****inventaire****/
+
+
+/**** css utilisateur ****/
+#utilisateur {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    perspective: 1000px;
+}
+
+#utilisateur .container {
+    margin-top: 20px;
+}
+
+#utilisateur .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+    margin-bottom: 20px;
+    text-align: center; /* Center align text */
+}
+
+#utilisateur .card:hover {
+    transform: scale(1.05) rotateX(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#utilisateur .card-header {
+    background-color: #ff0000;
+    color: white;
+    font-size: 1.25em;
+    padding: 15px;
+}
+
+#utilisateur .card-body {
+    padding: 20px;
+}
+
+#utilisateur .card-body i {
+    font-size: 3em;
+    color: #ff0000;
+}
+
+#utilisateur .card-body p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+#utilisateur .card-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#utilisateur .card-link:hover {
+    color: #ff0000;
+}
+
+#utilisateur .loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#utilisateur .loader {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 10px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 10px solid #3498db;
+    animation: spin 1s linear infinite;
+}
+
+#utilisateur .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background: url('logo.png') no-repeat center center;
+    background-size: contain;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#utilisateur .title-wrapper {
+    text-align: center;
+    margin: 20px 0;
+    perspective: 1000px;
+}
+
+#utilisateur .title {
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+/***fin utilisateur***/
+
+/***css creer un users***/
+#creation_utilisateur {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:  #f0f0f0;
+    perspective: 1000px;
+}
+
+#creation_utilisateur header{
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}
+
+#creation_utilisateur .container {
+    margin-top: 100px;
+}
+
+#creation_utilisateur .form-container {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transform: rotateX(10deg);
+    transition: transform 0.5s;
+}
+
+#creation_utilisateur .form-group {
+    margin-bottom: 1.5rem;
+}
+
+#creation_utilisateur .form-control {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#creation_utilisateur .form-control:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#creation_utilisateur .input-group-text {
+    background-color: #e3e3e3;
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    color: #333;
+}
+
+#creation_utilisateur .icon-animate {
+    transition: transform 0.3s ease;
+}
+
+#creation_utilisateur .input-group:hover .icon-animate {
+    transform: scale(1.2);
+}
+
+#creation_utilisateur button {
+    margin-right: 0.5rem;
+}
+
+#creation_utilisateur .btn-danger, .btn-secondary {
+    border-radius: 12px;
+}
+/***fin creer un users***/
+
+
+/*** css liste users***/
+#liste_utilisateur {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:  #f0f0f0;
+    perspective: 1000px;
+}
+
+#liste_utilisateur header{
+    background-color: #ff0000;
+    color: white;
+    text-align: center;
+    width: 60%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    transform: rotateX(10deg);
+    z-index: 1000;
+}

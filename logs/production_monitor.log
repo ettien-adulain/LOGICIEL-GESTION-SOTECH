@@ -1,0 +1,3 @@
+{"timestamp":"2025-09-28 22:49:05","type":"USAGE","value":"VENTE_COMPTANT","user":"admin","ip":"192.168.1.100","url":"\/vente.php","context":{"montant":15000,"articles":3}}
+{"timestamp":"2025-09-28 22:19:05","type":"PERFORMANCE","value":2.5,"user":"caissier1","ip":"192.168.1.101","url":"\/caisse.php","context":{"operation":"calcul_total","duration":2.5}}
+{"timestamp":"2025-09-28 21:19:05","type":"ERROR","value":"Connexion base de donn\u00e9es \u00e9chou\u00e9e","user":"system","ip":"192.168.1.1","url":"\/fonction_traitement\/request.php","context":{"severity":"HIGH","retry_count":3}}

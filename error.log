@@ -1,0 +1,343 @@
+[22-Sep-2025 08:18:09 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php on line 352
+[22-Sep-2025 08:18:09 UTC] PHP Stack trace:
+[22-Sep-2025 08:18:09 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php:0
+[22-Sep-2025 08:18:09 UTC] PHP   2. render_facture_html($id = 82, $proformat = ['IDPROFORMA' => 82, 'IDCLIENT' => NULL, 'ClientProforma' => 'yao paul koffi', 'ConditionReglement' => '10', 'ContactClientProforma' => '0705038774', 'email' => 'balobi@gmail.com', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-21', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-21 09:00:21', 'DateMod' => NULL, 'date_validite' => '2025-10-09 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-21 09:00:21', $dateproformat_valide = '2025-10-09 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 97, 'IDPROFORMA' => 82, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-21 09:00:21', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => 'SOTech', 1 => 'SOTech', 'adresse' => '11 BP 1776 Abidjan 11', 2 => '11 BP 1776 Abidjan 11', 'telephone' => '+225 07 10 10 10 19 / 27 22 55 82 30', 3 => '+225 07 10 10 10 19 / 27 22 55 82 30', 'Email' => 'contact@sotechapplestore.com', 4 => 'contact@sotechapplestore.com', 'adresse_bureau' => '2 Plateaux Latrille', 5 => '2 Plateaux Latrille', 'adresse_site' => 'www.sotech apple store.com', 6 => 'www.sotech apple store.com', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '1731992J', 8 => '1731992J', 'RCCM' => 'CI-ABJ-2017-A-17932', 9 => 'CI-ABJ-2017-A-17932', 'Code_SWIFT' => 'BGCDCIABXXX', 10 => 'BGCDCIABXXX', 'IBAN' => 'C193 CI13 1010 0501 5509 6700 0330', 11 => 'C193 CI13 1010 0501 5509 6700 0330', 'NumeroCompte' => '0155096770003', 12 => '0155096770003', 'NomBanque' => 'BRIDGE Bank', 13 => 'BRIDGE Bank', 'NUMERO' => '(+225) 07 09 90 09 55', 14 => '(+225) 07 09 90 09 55', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php:451
+[22-Sep-2025 08:18:09 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php on line 352
+[22-Sep-2025 08:18:09 UTC] PHP Stack trace:
+[22-Sep-2025 08:18:09 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php:0
+[22-Sep-2025 08:18:09 UTC] PHP   2. render_facture_html($id = 82, $proformat = ['IDPROFORMA' => 82, 'IDCLIENT' => NULL, 'ClientProforma' => 'yao paul koffi', 'ConditionReglement' => '10', 'ContactClientProforma' => '0705038774', 'email' => 'balobi@gmail.com', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-21', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-21 09:00:21', 'DateMod' => NULL, 'date_validite' => '2025-10-09 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-21 09:00:21', $dateproformat_valide = '2025-10-09 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 97, 'IDPROFORMA' => 82, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-21 09:00:21', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => 'SOTech', 1 => 'SOTech', 'adresse' => '11 BP 1776 Abidjan 11', 2 => '11 BP 1776 Abidjan 11', 'telephone' => '+225 07 10 10 10 19 / 27 22 55 82 30', 3 => '+225 07 10 10 10 19 / 27 22 55 82 30', 'Email' => 'contact@sotechapplestore.com', 4 => 'contact@sotechapplestore.com', 'adresse_bureau' => '2 Plateaux Latrille', 5 => '2 Plateaux Latrille', 'adresse_site' => 'www.sotech apple store.com', 6 => 'www.sotech apple store.com', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '1731992J', 8 => '1731992J', 'RCCM' => 'CI-ABJ-2017-A-17932', 9 => 'CI-ABJ-2017-A-17932', 'Code_SWIFT' => 'BGCDCIABXXX', 10 => 'BGCDCIABXXX', 'IBAN' => 'C193 CI13 1010 0501 5509 6700 0330', 11 => 'C193 CI13 1010 0501 5509 6700 0330', 'NumeroCompte' => '0155096770003', 12 => '0155096770003', 'NomBanque' => 'BRIDGE Bank', 13 => 'BRIDGE Bank', 'NUMERO' => '(+225) 07 09 90 09 55', 14 => '(+225) 07 09 90 09 55', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php:451
+[22-Sep-2025 08:18:09 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH\impression_proformat.php:352
+[22-Sep-2025 22:16:07 UTC] Erreur sendSmsUnique: SQLSTATE[42S22]: Column not found: 1054 Champ 'base_url' inconnu dans field list
+[22-Sep-2025 22:16:07 UTC] Erreur send_sms_infobip: Erreur configuration Infobip: SQLSTATE[42S22]: Column not found: 1054 Champ 'base_url' inconnu dans field list
+[22-Sep-2025 22:16:07 UTC] Erreur enregistrement DB: SQLSTATE[42S22]: Column not found: 1054 Champ 'erreur' inconnu dans field list
+[22-Sep-2025 22:16:12 UTC] Erreur sendSmsUnique: SQLSTATE[42S22]: Column not found: 1054 Champ 'base_url' inconnu dans field list
+[22-Sep-2025 22:16:13 UTC] Erreur send_sms_infobip: Erreur configuration Infobip: SQLSTATE[42S22]: Column not found: 1054 Champ 'base_url' inconnu dans field list
+[22-Sep-2025 22:16:13 UTC] Erreur enregistrement DB: SQLSTATE[42S22]: Column not found: 1054 Champ 'erreur' inconnu dans field list
+[22-Sep-2025 22:25:40 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585799408637952354220","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:25:40 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: Message sent to next instance
+[22-Sep-2025 22:25:50 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585799514967952354637","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:25:50 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: Message sent to next instance
+[22-Sep-2025 22:26:16 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585799774417952355593","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:26:16 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: Message sent to next instance
+[22-Sep-2025 22:28:24 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585801048437951077607","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:28:24 UTC] SMS Infobip - Numéro: +2250705038775, Succès: OUI, Message: SMS traité (Statut: Message sent to next instance)
+[22-Sep-2025 22:46:23 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585811846467950967555","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:46:23 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: SMS accepté mais non livré - Vérifiez votre solde Infobip et la configuration
+[22-Sep-2025 22:46:51 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4585812124517951937284","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[22-Sep-2025 22:46:51 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: SMS accepté mais non livré - Vérifiez votre solde Infobip et la configuration
+[23-Sep-2025 18:05:27 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 401, Response: {"requestError":{"serviceException":{"messageId":"UNAUTHORIZED","text":"Invalid login details"}}}
+[23-Sep-2025 18:05:27 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: Invalid login details
+[23-Sep-2025 18:05:34 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 401, Response: {"requestError":{"serviceException":{"messageId":"UNAUTHORIZED","text":"Invalid login details"}}}
+[23-Sep-2025 18:05:34 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: Invalid login details
+[23-Sep-2025 18:07:17 UTC] Infobip SMS Request - URL: https://pexx9e.api.infobip.com/sms/2/text/advanced, HTTP Code: 200, Response: {"messages":[{"messageId":"4586508392587950430478","status":{"description":"Message sent to next instance","groupId":1,"groupName":"PENDING","id":26,"name":"PENDING_ACCEPTED"},"to":"+2250705038775"}]}
+[23-Sep-2025 18:07:17 UTC] SMS Infobip - Numéro: +2250705038775, Succès: NON, Message: SMS accepté mais non livré - Vérifiez votre solde Infobip et la configuration
+[01-Oct-2025 08:14:57 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:14:57 UTC] PHP Stack trace:
+[01-Oct-2025 08:14:57 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:14:57 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:14:57 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:14:57 UTC] PHP Stack trace:
+[01-Oct-2025 08:14:57 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:14:57 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:14:57 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:352
+[01-Oct-2025 08:15:53 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:15:53 UTC] PHP Stack trace:
+[01-Oct-2025 08:15:53 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:15:53 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:15:53 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:15:53 UTC] PHP Stack trace:
+[01-Oct-2025 08:15:53 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:15:53 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:15:53 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:352
+[01-Oct-2025 08:16:05 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:16:05 UTC] PHP Stack trace:
+[01-Oct-2025 08:16:05 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:16:05 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:410
+[01-Oct-2025 08:16:05 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:16:05 UTC] PHP Stack trace:
+[01-Oct-2025 08:16:05 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:16:05 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:410
+[01-Oct-2025 08:16:05 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:352
+[01-Oct-2025 08:17:03 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:17:03 UTC] PHP Stack trace:
+[01-Oct-2025 08:17:03 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:17:03 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:410
+[01-Oct-2025 08:17:03 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:17:03 UTC] PHP Stack trace:
+[01-Oct-2025 08:17:03 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:17:03 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:410
+[01-Oct-2025 08:17:03 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:352
+[01-Oct-2025 08:17:22 UTC] PHP Warning:  Trying to access array offset on false in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:17:22 UTC] PHP Stack trace:
+[01-Oct-2025 08:17:22 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:17:22 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:17:22 UTC] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php on line 352
+[01-Oct-2025 08:17:22 UTC] PHP Stack trace:
+[01-Oct-2025 08:17:22 UTC] PHP   1. {main}() C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:0
+[01-Oct-2025 08:17:22 UTC] PHP   2. render_facture_html($id = 83, $proformat = ['IDPROFORMA' => 83, 'IDCLIENT' => NULL, 'ClientProforma' => 'ETTIEN ANOUGBA ADULAIN', 'ConditionReglement' => '11', 'ContactClientProforma' => '0705038775', 'email' => 'AADULAIN20@GMAIL.COM', 'CreeLe' => NULL, 'CreePar' => NULL, 'DateProforma' => '2025-09-23', 'EtapeProforma' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'TotalAchatHT' => NULL, 'TotalHorsTaxe' => NULL, 'TotalNetPayer' => '500000.00', 'TotalRemiseCommerciale' => NULL, 'TotalTaxeEncaisse' => NULL, 'TransformeeEnVenteLe' => NULL, 'TransformeeEnVentePar' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'date_validite' => '2025-10-12 00:00:00', 'desactiver' => 'non'], $dateproformat = '2025-09-22 08:05:15', $dateproformat_valide = '2025-10-12 00:00:00', $liste_article = [0 => ['IDPROFORMALIGNE' => 98, 'IDPROFORMA' => 83, 'IDARTICLE' => 118, 'IDCLIENT' => NULL, 'IDFOURNISSEUR' => NULL, 'IDMODEPAIEMENT' => NULL, 'DateNotification' => NULL, 'ModalitePaiementClient' => NULL, 'ModifieLe' => NULL, 'ModifiePar' => NULL, 'MontantAchatHT' => NULL, 'MontantProduitHT' => NULL, 'MontantProduitTTC' => '500000.00', 'MontantRemise' => '0.00', 'PrixUnitAchatHT' => NULL, 'PrixUnitAchatHTFiche' => NULL, 'PrixUnitVenteTTC' => NULL, 'PrixUnitVenteTTCFiche' => NULL, 'QteUVvente' => NULL, 'Quantite' => 1, 'TauxMajorationPrixAchat' => NULL, 'TauxRemiseProduit' => NULL, 'UniteVente' => NULL, 'DateIns' => '2025-09-22 08:05:15', 'DateMod' => NULL, 'desactiver' => 'non']], $entreprise = ['id' => 1, 0 => 1, 'nom' => '', 1 => '', 'adresse' => '', 2 => '', 'telephone' => '', 3 => '', 'Email' => '', 4 => '', 'adresse_bureau' => '', 5 => '', 'adresse_site' => '', 6 => '', 'logo1' => 'image_article/sotech.png', 7 => 'image_article/sotech.png', 'NCC' => '', 8 => '', 'RCCM' => '', 9 => '', 'Code_SWIFT' => '', 10 => '', 'IBAN' => '', 11 => '', 'NumeroCompte' => '', 12 => '', 'NomBanque' => '', 13 => '', 'NUMERO' => '', 14 => '', 'desactiver' => 'non', 15 => 'non'], $logo_path = 'http://localhost/LOGICIEL_SOTECH ERRONEE/image_article/sotech.png') C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:451
+[01-Oct-2025 08:17:22 UTC] PHP   3. htmlspecialchars($string = NULL) C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\impression_proformat.php:352
+[01-Oct-2025 18:20:16 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 
+)
+
+[01-Oct-2025 18:20:16 UTC] Nouvelle entrée créée ID: 105
+[01-Oct-2025 18:20:16 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:31 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 2
+)
+
+[01-Oct-2025 18:20:31 UTC] Mise à jour de l'entrée existante ID: 105
+[01-Oct-2025 18:20:31 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:31 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:31 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 2
+)
+
+[01-Oct-2025 18:20:31 UTC] Mise à jour de l'entrée existante ID: 105
+[01-Oct-2025 18:20:31 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:31 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:31 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 20
+)
+
+[01-Oct-2025 18:20:31 UTC] Mise à jour de l'entrée existante ID: 105
+[01-Oct-2025 18:20:31 UTC] Numéro de série ajouté: 20
+[01-Oct-2025 18:20:32 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:32 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 20
+)
+
+[01-Oct-2025 18:20:32 UTC] Mise à jour de l'entrée existante ID: 105
+[01-Oct-2025 18:20:32 UTC] Numéro de série ajouté: 20
+[01-Oct-2025 18:20:32 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:36 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 20
+)
+
+[01-Oct-2025 18:20:36 UTC] Mise à jour de l'entrée existante ID: 105
+[01-Oct-2025 18:20:36 UTC] Numéro de série ajouté: 20
+[01-Oct-2025 18:20:36 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:41 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 
+    [numSeries] => 
+)
+
+[01-Oct-2025 18:20:42 UTC] Fatal error inventaire_saisie: Uncaught TypeError: Unsupported operand types: string - int in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php:171
+Stack trace:
+#0 C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php(229): saveTempData(Object(PDO), '70', '124', '', '')
+#1 {main}
+  thrown in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php on line 171
+[01-Oct-2025 18:20:42 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 
+)
+
+[01-Oct-2025 18:20:42 UTC] Nouvelle entrée créée ID: 106
+[01-Oct-2025 18:20:42 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:48 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 2
+)
+
+[01-Oct-2025 18:20:48 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:48 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:48 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:48 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 2
+)
+
+[01-Oct-2025 18:20:48 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:48 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:48 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:48 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22
+)
+
+[01-Oct-2025 18:20:48 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:48 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:48 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:48 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22
+)
+
+[01-Oct-2025 18:20:48 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:48 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:48 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:49 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,2
+)
+
+[01-Oct-2025 18:20:49 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:49 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:49 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:49 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:49 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,2
+)
+
+[01-Oct-2025 18:20:49 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:49 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:49 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:49 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:50 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23
+)
+
+[01-Oct-2025 18:20:50 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:50 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:50 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:50 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:50 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23
+)
+
+[01-Oct-2025 18:20:50 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:50 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:50 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:50 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:51 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23,2
+)
+
+[01-Oct-2025 18:20:51 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:51 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:51 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23,2
+)
+
+[01-Oct-2025 18:20:51 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:51 UTC] Numéro de série ajouté: 2
+[01-Oct-2025 18:20:51 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:51 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23,24
+)
+
+[01-Oct-2025 18:20:52 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 24
+[01-Oct-2025 18:20:52 UTC] Transaction validée avec succès
+[01-Oct-2025 18:20:52 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 70
+    [idArticle] => 124
+    [qtePhysique] => 3
+    [numSeries] => 22,23,24
+)
+
+[01-Oct-2025 18:20:52 UTC] Mise à jour de l'entrée existante ID: 106
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 22
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 23
+[01-Oct-2025 18:20:52 UTC] Numéro de série ajouté: 24
+[01-Oct-2025 18:20:52 UTC] Transaction validée avec succès
+[01-Oct-2025 19:27:33 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 72
+    [idArticle] => 119
+    [qtePhysique] => 1
+    [numSeries] => 
+)
+
+[01-Oct-2025 19:27:33 UTC] Nouvelle entrée créée ID: 107
+[01-Oct-2025 19:27:33 UTC] Transaction validée avec succès
+[01-Oct-2025 19:27:35 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 72
+    [idArticle] => 119
+    [qtePhysique] => 
+    [numSeries] => 
+)
+
+[01-Oct-2025 19:27:35 UTC] Fatal error inventaire_saisie: Uncaught TypeError: Unsupported operand types: string - int in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php:145
+Stack trace:
+#0 C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php(229): saveTempData(Object(PDO), '72', '119', '', '')
+#1 {main}
+  thrown in C:\wamp64bit\www\LOGICIEL_SOTECH ERRONEE\inventaire_saisie.php on line 145
+[01-Oct-2025 19:27:35 UTC] Sauvegarde temporaire - Paramètres : Array
+(
+    [idInventaire] => 72
+    [idArticle] => 119
+    [qtePhysique] => 0
+    [numSeries] => 
+)
+
+[01-Oct-2025 19:27:36 UTC] Mise à jour de l'entrée existante ID: 107
+[01-Oct-2025 19:27:36 UTC] Transaction validée avec succès

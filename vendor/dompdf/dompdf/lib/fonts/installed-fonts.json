@@ -1,0 +1,19 @@
+{
+    "font awesome 6 brands": {
+        "normal": "font_awesome_6_brands_normal_31636509732b4298588040c87c3592c6"
+    },
+    "font awesome 6 free": {
+        "normal": "C:\\wamp64bit\\www\\mis_a_jour OFFICIELLE\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_6_free_normal_1321bfcfa727e01fd6f51a5f5864a82b",
+        "900": "font_awesome_6_free_900_a4b7023c0a078a27002a27fd500f100e"
+    },
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_6b898e2c5cc213c4404811c323fdcab6"
+    },
+    "font awesome 5 free": {
+        "900": "font_awesome_5_free_900_f6c1d66ca0f6a9c230936770c324b606",
+        "normal": "C:\\wamp64bit\\www\\mis_a_jour OFFICIELLE\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_5_free_normal_09a636486ad6e3e7e715ee5a0373f2ab"
+    },
+    "fontawesome": {
+        "normal": "fontawesome_normal_98ba43c5288785d68524e2de74fccc87"
+    }
+}

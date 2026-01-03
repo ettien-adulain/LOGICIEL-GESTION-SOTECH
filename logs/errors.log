@@ -1,0 +1,5 @@
+[2025-09-28 22:19:05] ERREUR PHP: Undefined variable: $undefined_var dans /var/www/html/fonction_traitement/request.php ligne 1250
+[2025-09-28 21:19:05] EXCEPTION: Database connection failed dans /var/www/html/db/connecting.php ligne 45
+[2025-09-28 20:19:05] ARRÊT FATAL: Call to undefined function undefined_function() dans /var/www/html/vente.php ligne 320
+[2025-09-28 19:19:05] ERREUR PHP: Division by zero dans /var/www/html/calcul.php ligne 15
+[2025-09-28 18:19:05] EXCEPTION: SQLSTATE[23000]: Integrity constraint violation dans /var/www/html/fonction_traitement/request.php ligne 2100
